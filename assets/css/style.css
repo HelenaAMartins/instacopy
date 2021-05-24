@@ -1,126 +1,137 @@
-*{
+* {
   padding: 0%;
   margin: 0;
   box-sizing: border-box;
-  text-decoration: none; 
+  text-decoration: none;
   font-family: sans-serif;
   font-size: 14px;
 }
 
-body{
+body {
   width: 100%;
   min-height: 100vh;
-  background-color: snow;
+  background-color: white;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
 }
 
-.instagramWrapper{
+.instagramWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100vh;
+  padding: 30px;
+  max-width: 980px;
 }
 
-.instagramPhones{
-  
+.instagramPhones {
   align-items: center;
   justify-content: center;
   width: 50%;
   display: none;
 }
 
-.instagramPhones img{
+.instagramPhones img {
   height: 50rem;
-  
 }
 
-/* .instaEx{
-  position: absolute;
-  top: 332px;
-  left: 402px;
-  width: 14%;
-
-} */
-
-.instagramContinue{
+.instagramContinue {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   min-height: 40rem;
-  
+  max-width: 350px;
 }
 
-.group{
+.group {
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: #fff;
   width: 100%;
   padding: 2.3rem 0;
-  border: 1px solid lightgrey;
+
   height: 350px;
   justify-content: space-between;
 }
 
-.instaLogo{
+.instaLogo {
   width: 12rem;
 }
 
-.profilePic{
+.profilePic {
   display: flex;
   justify-content: center;
   border-radius: 50%;
   overflow: hidden;
   align-items: center;
+  width: 100px;
 }
 
-.profilePic img{
-  height: 10rem;
+.profilePic img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.login{
+.login {
   background-color: #0095f6;
   color: #fff;
   padding: 8px 30px;
   border-radius: 4px;
   font-weight: bold;
+  font-size: 12px;
 }
 
-.notYou{
-  display: flex;
+.notYou {
+  display: inline-block;
+  text-align: center;
+  width: 70%;
+  margin-top: 20px;
 }
 
-.logout{
+.logout {
   color: #0095f6;
   margin-top: 1rem;
   font-weight: bold;
 }
 
-span{
+span {
   margin-top: 1rem;
 }
 
-@media screen and (min-width: 450px){
- 
+@media screen and (min-width: 450px) {
+  body {
+    background-color: #fafafa;
+  }
+
+  .group {
+    border: 1px solid lightgrey;
+  }
+
+  .login {
+    font-size: 14px;
+  }
+
+  .notYou {
+    width: 100%;
+  }
 }
 
-@media screen and (min-width: 875px){
-  .instagramWrapper{
+@media screen and (min-width: 875px) {
+  .instagramWrapper {
     justify-content: start;
     padding: 10px;
   }
-  .instagramPhones{
+  .instagramPhones {
     display: flex;
-
   }
-  .instagramContinue{
-    width: 30%;
+  .instagramContinue {
+    width: 50%;
   }
-
 }
